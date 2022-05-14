@@ -1,4 +1,4 @@
-@use 'scss/atoms.scss';
-@use 'scss/molecules.scss';
-@use 'scss/organisms.scss';
-@use 'scss/variables.scss';
+@use 'variables' as *;
+@use 'atoms';
+@use 'molecules';
+@use 'organisms';
