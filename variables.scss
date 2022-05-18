@@ -6,31 +6,37 @@ $body-Font: 'Antic',
 sans-serif;
 $font-Size: 72px;
 // Color theme
-$color1Brown: #845348;
-$color2Yellow: #f09f2d;
-$color3Cream: #fefae0;
-$color4DarkGreen: #283618;
-$color5LighterGreen: #606c38;
+$color1: #845348;
+$color2: #f09f2d;
+$color3: #fefae0;
+$color4: #283618;
+$color5: #606c38;
+$color6: white;
+$color7: black;
 //set breakpoint sizes for responsive viewport
 $break-small: 20em;
 $break-medium: 31em;
 $break-large: 60em;
+
 @mixin breakpoint($break) {
     @if $break==large {
         @media (max-width: $break-large) {
             @content;
         }
     }
+
     @else if $break==medium {
         @media (max-width: $break-medium) {
             @content;
         }
     }
+
     @else if $break==small {
         @media (max-width: $break-small) {
             @content;
         }
     }
+
     @else {
         @media ($break) {
             @content;
