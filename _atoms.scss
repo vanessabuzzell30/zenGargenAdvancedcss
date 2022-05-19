@@ -1,4 +1,5 @@
 @import 'variables';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +24,8 @@ nav {
 }
 
 body {
-    background-image: url("/images/beautiful-shot-forest-with-tall-green-trees.jpg");
+    background-image: url("/images/rootedtree1500.jpg");
+    color: $color6;
 }
 
 .zen-intro {
