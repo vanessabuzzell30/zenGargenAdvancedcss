@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,4 +30,4 @@ body {
 .zen-intro {
   font-size: 72px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=atoms.css.map */
