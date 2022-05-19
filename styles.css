@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -24,11 +27,19 @@ nav {
 }
 
 body {
-  background-image: url("/images/beautiful-shot-forest-with-tall-green-trees.jpg");
+  background-image: url("/images/rootedtree1500.jpg");
+  color: white;
 }
 
 .zen-intro {
   font-size: 72px;
 }
 
+body {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
