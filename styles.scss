@@ -1,4 +1,4 @@
-@use 'variables' as *;
-@use 'atoms';
-@use 'molecules';
-@use 'organisms';
+@import 'variables'; 
+@import 'atoms';
+@import 'molecules';
+@import 'organisms';
