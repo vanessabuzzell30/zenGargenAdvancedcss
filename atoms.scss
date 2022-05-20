@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables';
 
 @mixin flexCenter {
     display: flex;
@@ -15,7 +15,7 @@
 
 
 h1 {
-    font-family: $heading-font;
+    font: $heading-Font;
     color: $text-light;
     font-weight: normal;
     margin-bottom: 1em;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2, h3 {
-    font-family: $body-font;
+    font: $body-font;
     color: $text-light;
     font-weight: 200; /* thin */
     font-size: 6em;
