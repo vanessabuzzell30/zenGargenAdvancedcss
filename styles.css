@@ -26,11 +26,17 @@ nav {
   font-family: "Antic", sans-serif;
 }
 
-body {
-  background-image: url("/images/beautiful-shot-forest-with-tall-green-trees.jpg");
-}
-
 .zen-intro {
   font-size: 72px;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("/images/rootedTree1500.jpg");
+  
 }
 /*# sourceMappingURL=styles.css.map */

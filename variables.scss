@@ -5,14 +5,18 @@ serif;
 $body-Font: 'Antic',
 sans-serif;
 $font-Size: 72px;
+
 // Color theme
 $color1: #845348;
 $color2: #f09f2d;
 $color3: #fefae0;
 $color4: #283618;
 $color5: #606c38;
-$color6: white;
-$color7: black;
+$text-light: white;
+$text-dark: black;
+
+
+
 //set breakpoint sizes for responsive viewport
 $break-small: 20em;
 $break-medium: 31em;
