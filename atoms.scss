@@ -23,9 +23,35 @@ nav {
 }
 
 body {
-    background-image: url("/images/beautiful-shot-forest-with-tall-green-trees.jpg");
+    margin: 2em;
+    background: url('https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700') center center / cover no-repeat;
+    position: relative;
 }
 
-.zen-intro {
-    font-size: $font-Size;
+div[role=article] {
+    color: $color7;
+    background-color: rgba( 255, 255, 255, 0.15);
+    margin: 1em 0;
+    padding: .5em;
+}
+
+header {
+    color: $color7;
+    margin: 1em 0;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 3px solid $color5;
+    text-shadow: $color5 3px 0 10px;
+}
+
+footer {
+    position: absolute;
+    margin: -1em 0;
+    padding: 3em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba( 255, 255, 255, 0.15);
+    text-align: center;
 }
