@@ -8,17 +8,27 @@
 
 body {
   background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
+  font-family: "Fredericka the Great", serif;
   color: white;
-  display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
 }
 
 h2, h3 {
+  font-family: "Antic", sans-serif;
   color: white;
   font-weight: 200;
   /* thin */

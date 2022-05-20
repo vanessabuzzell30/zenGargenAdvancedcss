@@ -1,4 +1,11 @@
-@import 'variables';
+@use 'variables' as *;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 * {
     box-sizing: border-box;
@@ -8,18 +15,21 @@
 
 body {
     background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
-    
-     
+    @include flexCenter;
+
+        
 }
 
 h1 {
+    font-family: $heading-font;
     color: $text-light;
-    display: inline-block;
     font-weight: normal;
     margin-bottom: 1em;
     padding: 0.5em 1em;
 }
+
 h2, h3 {
+    font-family: $body-font;
     color: $text-light;
     font-weight: 200; /* thin */
     font-size: 6em;
@@ -31,20 +41,50 @@ h2, h3 {
 h4,
 h5,
 h6 {
-    font-family: $heading-Font;
+    font-family: $heading-font;
 }
 
 p {
-    font-family: $body-Font;
+    font-family: $body-font;
     color: $text-light;
     padding: 0.5em 0;
     margin: 0;
 }
 
 nav {
-    font-family: $body-Font;
+    font-family: $body-font;
 }
 
 .zen-intro {
-    font-size: $font-Size;
+    font-size: $font-size;
+}
+//set breakpoint sizes for responsive viewport
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
+@mixin breakpoint($break) {
+    @if $break==large {
+        @media (max-width: $break-large) {
+            @content;
+        }
+    }
+
+    @else if $break==medium {
+        @media (max-width: $break-medium) {
+            @content;
+        }
+    }
+
+    @else if $break==small {
+        @media (max-width: $break-small) {
+            @content;
+        }
+    }
+
+    @else {
+        @media ($break) {
+            @content;
+        }
+    }
 }

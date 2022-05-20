@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,8FAAI;ADCZ,IAAI,CAAJ,OAAI",
+    "mappings": "AAAA,IAAI,CAAJ,gBAAI;AACJ,IAAI,CAAJ,OAAI",
     "sources": [
-        "molecules.scss",
-        "variables.scss"
+        "molecules.scss"
     ],
     "names": [],
     "file": "molecules.css"

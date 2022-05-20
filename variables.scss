@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 // Typography
-$heading-Font: 'Fredericka the Great',
-serif;
-$body-Font: 'Antic',
-sans-serif;
+$heading-Font: 'Fredericka the Great', cursive;
+$body-Font: 'Antic', sans-serif; //font-family: 'Antic', sans-serif;
 $font-Size: 72px;
 
 // Color theme
@@ -17,33 +16,3 @@ $text-dark: black;
 
 
 
-//set breakpoint sizes for responsive viewport
-$break-small: 20em;
-$break-medium: 31em;
-$break-large: 60em;
-
-@mixin breakpoint($break) {
-    @if $break==large {
-        @media (max-width: $break-large) {
-            @content;
-        }
-    }
-
-    @else if $break==medium {
-        @media (max-width: $break-medium) {
-            @content;
-        }
-    }
-
-    @else if $break==small {
-        @media (max-width: $break-small) {
-            @content;
-        }
-    }
-
-    @else {
-        @media ($break) {
-            @content;
-        }
-    }
-}
