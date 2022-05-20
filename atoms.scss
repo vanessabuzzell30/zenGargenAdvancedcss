@@ -13,12 +13,6 @@
     padding: 0;
 }
 
-body {
-    background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
-    @include flexCenter;
-
-        
-}
 
 h1 {
     font-family: $heading-font;
@@ -44,6 +38,12 @@ h6 {
     font-family: $heading-font;
 }
 
+body {
+    background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
+    @include flexCenter;
+
+        
+}
 p {
     font-family: $body-font;
     color: $text-light;
