@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 @mixin flexCenter {
     display: flex;
@@ -13,6 +13,13 @@
     padding: 0;
 }
 
+body {
+    background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
+    @include flexCenter;
+    color: white;
+
+        
+}
 
 h1 {
     font: $heading-Font;
@@ -23,7 +30,7 @@ h1 {
 }
 
 h2, h3 {
-    font: $body-font;
+    font: $body-Font;
     color: $text-light;
     font-weight: 200; /* thin */
     font-size: 6em;
@@ -35,28 +42,22 @@ h2, h3 {
 h4,
 h5,
 h6 {
-    font-family: $heading-font;
+    font-family: $heading-Font;
 }
 
-body {
-    background-image: url("/images/rootedTree1500.jpg") alt= "Rooted Tree";
-    @include flexCenter;
-
-        
-}
 p {
-    font-family: $body-font;
+    font-family: $body-Font;
     color: $text-light;
     padding: 0.5em 0;
     margin: 0;
 }
 
 nav {
-    font-family: $body-font;
+    font-family: $body-Font;
 }
 
 .zen-intro {
-    font-size: $font-size;
+    font-size: $font-Size;
 }
 //set breakpoint sizes for responsive viewport
 $break-small: 20em;
