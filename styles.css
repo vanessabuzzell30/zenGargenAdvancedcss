@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +36,7 @@ div[role=article] {
   color: black;
   background-color: rgba(255, 255, 255, 0.25);
   margin: 1em 0;
-  padding: 0.5em;
+  padding: .5em;
 }
 
 header {
@@ -44,8 +45,22 @@ header {
   width: 100%;
   font-size: 40px;
   text-align: center;
-  border-bottom: 3px solid #606c38;
+  border-bottom: 4px solid #606c38;
   text-shadow: #606c38 3px 0 10px;
+  padding-bottom: 75px;
+  padding-top: 20px;
+}
+
+#zen-intro {
+  background-image: url(/images/tree_logo.png);
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+  background-position: left top;
+}
+
+.intro h2 {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 footer {
@@ -58,5 +73,4 @@ footer {
   background-color: rgba(255, 255, 255, 0.15);
   text-align: center;
 }
-
 /*# sourceMappingURL=styles.css.map */

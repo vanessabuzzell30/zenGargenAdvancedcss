@@ -41,8 +41,29 @@ header {
     width: 100%;
     font-size: 40px;
     text-align: center;
-    border-bottom: 3px solid $color5;
+    border-bottom: 4px solid $color5;
     text-shadow: $color5 3px 0 10px;
+    padding-bottom: 75px;
+    padding-top: 20px;
+    
+   
+}
+
+#zen-intro {
+    background-image: url(/images/tree_logo.png);
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-position: left top;
+    
+    
+      
+   
+}
+
+.intro h2 {
+    font-size: 20px;
+    font-weight: lighter; 
+        
 }
 
 footer {
