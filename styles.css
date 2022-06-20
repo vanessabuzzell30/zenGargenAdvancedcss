@@ -18,9 +18,15 @@ h6 {
   font-family: "Fredericka the Great", serif;
 }
 
+h3 {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
 p {
   font-family: "Antic", sans-serif;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -42,8 +48,9 @@ body {
 .main.supporting {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 0;
-  padding: .5em;
+  padding: 1em;
   border: 2px solid #606c38;
+  border-radius: 10px;
 }
 
 header {
