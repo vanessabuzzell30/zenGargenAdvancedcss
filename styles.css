@@ -18,9 +18,15 @@ h6 {
   font-family: "Fredericka the Great", serif;
 }
 
+h3 {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
 p {
   font-family: "Antic", sans-serif;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 nav {
@@ -36,14 +42,16 @@ body {
 .summary {
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
 }
 
 .preamble,
 .main.supporting {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 0;
-  padding: .5em;
+  padding: 1em;
   border: 2px solid #606c38;
+  border-radius: 10px;
 }
 
 header {
@@ -51,19 +59,21 @@ header {
   width: 100%;
   font-size: 40px;
   text-align: center;
-  text-shadow: #fefae0 30px 30px 30px;
-}
-
-header[role=banner] {
-  background: url(/images/tree_logo.png) no-repeat left top;
-  background-size: 150px auto;
-  padding: 10px 5px;
+  text-shadow: #fefae0 20px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .intro h2 {
   font-size: 20px;
   font-weight: lighter;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+header[role=banner] {
+  padding-top: 230px;
+  background: url(/images/tree_logo.png) no-repeat 50% top;
+  background-size: 200px auto;
+  background-blend-mode: lighten;
 }
 
 footer {
