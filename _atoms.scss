@@ -12,24 +12,17 @@ h4,
 h5,
 h6 {
     font-family: $heading-Font;
-    
 }
 
 h3 {
     padding-bottom: 10px;
     padding-top: 5px;
-    
-    
 }
-
 
 p {
     font-family: $body-Font;
     font-weight: 700;
     padding-bottom: 10px;
-    
-    
-    
 }
 
 nav {
@@ -38,68 +31,90 @@ nav {
 
 body {
     margin: 5em;
-    background: url('https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700'
-    ) center center / cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700') center center / cover no-repeat;
     position: relative;
-    
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .summary {
-    
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;   
+    text-align: center;
 }
 
-.preamble, 
-.main.supporting {
-    
+div[role=article] {
     background-color: rgba(254, 250, 224, 0.5);
     margin: 1em 0;
     padding: 1em;
     border: 2px solid $color5;
     border-radius: 10px;
-              
 }
 
+.intro {
+    display: grid;
+    grid-column: 1 / 6;
+}
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
     color: $color7;
     width: 100%;
     font-size: 40px;
     text-align: center;
-    text-shadow: $color3 20px 20px 20px; 
-    padding-bottom: 20px;    
+    text-shadow: $color3 20px 20px 20px;
 }
 
+.sidebar {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.main {
+    grid-column: 1/2;
+    grid-row: 2;
+}
 
 .intro h2 {
     font-size: 20px;
     font-weight: lighter;
-    
     padding-bottom: 15px;
-        
 }
 
 header[role=banner] {
-    
-    padding-top: 230px; 
+    padding-top: 230px;
     background: url(/images/tree_logo.png)no-repeat 50% top;
     background-size: 200px auto;
     background-blend-mode: lighten;
-   
-                    
 }
 
-
-
 footer {
-    position: absolute;
-    margin: -1em 0;
-    margin-top: 20px;
-    padding: 2em;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    height: 100px;
+    background-color: $color4;
+    padding: 2.5em 0;
+    opacity: 0.8;
+    a {
+        color: $color2;
+        padding: 0 3em;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color3;
+    }
+    a:visited {
+        color: $color2;
+    }
+}
+
+.zen-validate-html {
+    color: $color6;
+    padding: 0 1em;
 }
