@@ -41,8 +41,14 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.summary {
+#zen-summary {
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#zen-preamble {
+    padding-bottom: -30px;
 }
 
 div[role=article] {
@@ -51,6 +57,16 @@ div[role=article] {
     padding: 1em;
     border: 2px solid $color5;
     border-radius: 10px;
+    a {
+        color: $color7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color3;
+    }
+    a:visited {
+        color: $color2;
+    }
 }
 
 .intro {
@@ -70,13 +86,52 @@ header {
     text-shadow: $color3 20px 20px 20px;
 }
 
-.sidebar {
-    grid-column: 5;
+aside {
+    a {
+        color: $color7;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    a:hover {
+        color: $color3;
+    }
+    a:visited {
+        color: $color2;
+    }
+}
+
+#design-selection {
+    grid-column: 3/5;
     grid-row: 2;
+    background-color: rgba(254, 250, 224, 0.5);
+    margin: 1em 0 1em 1em;
+    padding: 1em;
+    border: 2px solid $color5;
+    border-radius: 10px;
+}
+
+#design-archives {
+    grid-column: 3/5;
+    grid-row: 2;
+    background-color: rgba(254, 250, 224, 0.5);
+    margin: 1em 0 1em 1em;
+    padding: 1em;
+    border: 2px solid $color5;
+    border-radius: 10px;
+}
+
+#zen-resources {
+    grid-column: 3/5;
+    grid-row: 2;
+    background-color: rgba(254, 250, 224, 0.5);
+    margin: 1em 0 1em 1em;
+    padding: 1em;
+    border: 2px solid $color5;
+    border-radius: 10px;
 }
 
 .main {
-    grid-column: 1/2;
+    grid-column: 1/span 1;
     grid-row: 2;
 }
 
