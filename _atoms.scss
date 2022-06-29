@@ -38,7 +38,6 @@ body {
 
 
 
-/* .page-wrapper */
 .page-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -51,7 +50,7 @@ body {
     border: none; 
     background: url(/images/imgleaf.png)no-repeat top right;
     background-size: 200px auto;
-    margin-right: 60px;
+    margin-right: 0 0 60px 0;
     min-height: 0;
        
     
@@ -71,10 +70,11 @@ body {
     padding-bottom: 0;
 }
 */
-/* #zen-preamble {
+#zen-preamble {
+    margin: 1em 5em 1em 5em;
     padding-bottom: -30px;
 }
-*/
+
 div[role=article] {
     background-color: rgba(254, 250, 224, 0.5);
     margin: 1em 0;
