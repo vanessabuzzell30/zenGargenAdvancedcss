@@ -46,22 +46,21 @@ body {
 
 
 #zen-summary {
+  
     background-color:transparent;
     border: none; 
     background: url(/images/imgleaf.png)no-repeat top right;
     background-size: 200px auto;
-    margin-right: 0 0 60px 0;
-    min-height: 0;
-       
-    
+    margin: 0 100px 0 0;
+               
 }
 .summary p {
     clear: right;
     float: right;
-    margin-right: 105px;
+    margin-right: 180px;
     width: 400px;
     font-style: italic; 
-    min-height: 0 
+   
   }
   
 /* #zen-summary {
@@ -106,6 +105,7 @@ header {
     width: 100%;
     font-size: 40px;
     text-shadow: $color3 30px 30px 30px;
+    padding-bottom: 80px;
     
         
 }
@@ -127,6 +127,7 @@ header[role=banner] {
 header[role=banner] {
     background: url(/images/leaves_tran.png)no-repeat top left;
     background-blend-mode: lighten;
+    
        
 }
 
