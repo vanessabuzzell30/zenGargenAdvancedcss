@@ -49,15 +49,30 @@ body {
 }
 
 #zen-summary {
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  background-color: transparent;
+  border: none;
+  background: url(/images/imgleaf.png) no-repeat top right;
+  background-size: 350px auto;
 }
 
-#zen-preamble {
-  padding-bottom: -30px;
+.summary p {
+  clear: right;
+  float: right;
+  margin: 0;
+  width: 280px;
+  font-style: italic;
 }
 
+/* #zen-summary {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+*/
+/* #zen-preamble {
+    padding-bottom: -30px;
+}
+*/
 div[role=article] {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 0;
@@ -88,21 +103,24 @@ div[role=article] a:visited {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 16px;
+  text-align: center;
   color: black;
   width: 100%;
   font-size: 40px;
-  text-align: center;
   text-shadow: #fefae0 20px 20px 20px;
+}
+
+/*
+header[role=banner] {
+    padding-top: 230px;
+    background: url(/images/tree_logo.png)no-repeat 50% top;
+    background-size: 200px auto;
+    background-blend-mode: lighten;
+}
+*/
+header[role=banner] {
+  background: url(/images/leaves_tran.png) no-repeat top left;
+  background-blend-mode: lighten;
 }
 
 aside a {
@@ -170,13 +188,6 @@ aside a:visited {
   font-size: 20px;
   font-weight: lighter;
   padding-bottom: 15px;
-}
-
-header[role=banner] {
-  padding-top: 230px;
-  background: url(/images/tree_logo.png) no-repeat 50% top;
-  background-size: 200px auto;
-  background-blend-mode: lighten;
 }
 
 footer {
