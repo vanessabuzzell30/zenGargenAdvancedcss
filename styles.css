@@ -39,29 +39,18 @@ body {
   position: relative;
 }
 
-.page-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-}
-
 #zen-summary {
   background-color: transparent;
   border: none;
   background: url(/images/imgleaf.png) no-repeat top right;
   background-size: 200px auto;
-  margin: 0 100px 0 0;
+  padding: 10px 0 10px 0;
   z-index: 6;
 }
 
 .summary p {
-  clear: right;
-  float: right;
   margin-right: 180px;
-  width: 400px;
+  width: 25rem;
   font-style: italic;
 }
 
@@ -95,14 +84,6 @@ div[role=article] a:hover {
 
 div[role=article] a:visited {
   color: #f09f2d;
-}
-
-.intro {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 / 6;
 }
 
 header {

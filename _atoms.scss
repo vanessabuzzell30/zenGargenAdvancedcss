@@ -38,12 +38,6 @@ body {
 
 
 
-.page-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-}
-
 
 #zen-summary {
   
@@ -51,16 +45,14 @@ body {
     border: none; 
     background: url(/images/imgleaf.png)no-repeat top right;
     background-size: 200px auto;
-    margin: 0 100px 0 0;
+    padding: 10px 0 10px 0;
     z-index: 6;
                
 }
 
 .summary p {
-    clear: right;
-    float: right;
     margin-right: 180px;
-    width: 400px;
+    width: 25rem;
     font-style: italic; 
    
   }
@@ -94,11 +86,6 @@ div[role=article] {
     }
 }
 
-.intro {
-    display: grid;
-    grid-column: 1 / 6;
-    
-} 
 
 header {
     text-align: center;
