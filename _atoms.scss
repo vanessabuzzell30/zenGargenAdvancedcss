@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 h1,
 h2,
 h3,
@@ -30,24 +31,40 @@ nav {
 }
 
 body {
-    margin: 5em;
+    margin: 0;
     background: url('https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700') center center / cover no-repeat;
     position: relative;
 }
 
-.page-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-}
+
+
 
 #zen-summary {
+  
+    background-color:transparent;
+    border: none; 
+    background: url(/images/imgleaf.png)no-repeat top right;
+    background-size: 200px auto;
+    padding: 10px 0 10px 0;
+    z-index: 6;
+               
+}
+
+.summary p {
+    margin-right: 180px;
+    width: 25rem;
+    font-style: italic; 
+   
+  }
+  
+/* #zen-summary {
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
+*/
 #zen-preamble {
+    margin: 1em 5em 1em 5em;
     padding-bottom: -30px;
 }
 
@@ -69,22 +86,44 @@ div[role=article] {
     }
 }
 
-.intro {
-    display: grid;
-    grid-column: 1 / 6;
-}
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
+    text-align: center;
     color: $color7;
     width: 100%;
+    height: 100%;
     font-size: 40px;
-    text-align: center;
-    text-shadow: $color3 20px 20px 20px;
+    text-shadow: $color3 30px 30px 30px;
+    padding-bottom: 80px;
+    
+        
 }
+
+header h1 {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*
+header[role=banner] {
+    padding-top: 230px;
+    background: url(/images/tree_logo.png)no-repeat 50% top;
+    background-size: 200px auto;
+    background-blend-mode: lighten;
+}
+*/
+
+header[role=banner] {
+    background: url(/images/leaves_tran.png)no-repeat top left;
+    background-blend-mode: lighten;
+    
+       
+}
+
+
 
 aside {
     a {
@@ -104,7 +143,7 @@ aside {
     grid-column: 3/5;
     grid-row: 2;
     background-color: rgba(254, 250, 224, 0.5);
-    margin: 1em 0 1em 1em;
+    margin: 1em 5em 1em 1em;
     padding: 1em;
     border: 2px solid $color5;
     border-radius: 10px;
@@ -114,7 +153,7 @@ aside {
     grid-column: 3/5;
     grid-row: 2;
     background-color: rgba(254, 250, 224, 0.5);
-    margin: 1em 0 1em 1em;
+    margin: 1em 5em 1em 1em;
     padding: 1em;
     border: 2px solid $color5;
     border-radius: 10px;
@@ -124,15 +163,19 @@ aside {
     grid-column: 3/5;
     grid-row: 2;
     background-color: rgba(254, 250, 224, 0.5);
-    margin: 1em 0 1em 1em;
+    margin: 1em 5em 1em 1em;
     padding: 1em;
     border: 2px solid $color5;
     border-radius: 10px;
 }
 
 .main {
-    grid-column: 1/span 1;
+    grid-column: 1 / span 1;
     grid-row: 2;
+    margin-left: 5em;
+    margin-right: 5em;
+    max-width: 1100px;
+    
 }
 
 .intro h2 {
@@ -141,12 +184,6 @@ aside {
     padding-bottom: 15px;
 }
 
-header[role=banner] {
-    padding-top: 230px;
-    background: url(/images/tree_logo.png)no-repeat 50% top;
-    background-size: 200px auto;
-    background-blend-mode: lighten;
-}
 
 footer {
     display: flex;
