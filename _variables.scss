@@ -5,6 +5,7 @@ serif;
 $body-Font: 'Antic',
 sans-serif;
 $font-Size: 72px;
+$sub-heading-font-size: 25px;
 // Color theme
 $color1: #845348;
 $color2: #f09f2d; // rgba(240, 159, 45)
@@ -17,26 +18,22 @@ $color7: black;
 $break-small: 20em;
 $break-medium: 31em;
 $break-large: 60em;
-
 @mixin breakpoint($break) {
     @if $break==large {
         @media (max-width: $break-large) {
             @content;
         }
     }
-
     @else if $break==medium {
         @media (max-width: $break-medium) {
             @content;
         }
     }
-
     @else if $break==small {
         @media (max-width: $break-small) {
             @content;
         }
     }
-
     @else {
         @media ($break) {
             @content;
