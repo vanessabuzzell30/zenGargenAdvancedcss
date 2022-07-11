@@ -56,6 +56,8 @@ body {
   grid-row: 1;
   padding: 4em;
   margin-bottom: 20em;
+  background: url(/images/leaves_tran.png) no-repeat top left;
+  background-blend-mode: lighten;
 }
 
 #zen-summary {
@@ -63,7 +65,7 @@ body {
   border: none;
   background: url(/images/imgleaf.png) no-repeat top right;
   background-size: 200px auto;
-  padding: 10px 0 10px 0;
+  margin-top: -7em;
   z-index: 6;
 }
 
@@ -73,15 +75,13 @@ body {
   font-style: italic;
 }
 
-/* #zen-summary {
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-*/
 #zen-preamble {
-  margin: 1em 5em 1em 5em;
-  padding-bottom: -30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f09f2d), to(#606c38));
+  background-image: linear-gradient(to right, #f09f2d, #606c38);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 25px;
 }
 
 div[role=article] {
@@ -133,11 +133,6 @@ header[role=banner] {
     background-blend-mode: lighten;
 }
 */
-header[role=banner] {
-  background: url(/images/leaves_tran.png) no-repeat top left;
-  background-blend-mode: lighten;
-}
-
 aside {
   -ms-grid-column: 2;
   grid-column: 2;
