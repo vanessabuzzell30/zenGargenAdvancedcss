@@ -64,9 +64,8 @@ body {
   background-color: transparent;
   border: none;
   background: url(/images/imgleaf.png) no-repeat top right;
-  background-size: 200px auto;
-  margin-top: -7em;
-  z-index: 6;
+  background-size: 125px auto;
+  margin-top: -9em;
 }
 
 .summary p {
@@ -125,14 +124,6 @@ header h1 {
           justify-content: center;
 }
 
-/*
-header[role=banner] {
-    padding-top: 230px;
-    background: url(/images/tree_logo.png)no-repeat 50% top;
-    background-size: 200px auto;
-    background-blend-mode: lighten;
-}
-*/
 aside {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -155,7 +146,7 @@ aside a:visited {
 }
 
 aside nav[role=navigation] li {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -171,7 +162,7 @@ aside nav[role=navigation] li:hover {
 }
 
 aside .view-css {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -181,7 +172,7 @@ aside .view-css {
 }
 
 aside .css-resources {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -191,7 +182,7 @@ aside .css-resources {
 }
 
 aside .zen-faq {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -201,7 +192,7 @@ aside .zen-faq {
 }
 
 aside .zen-submit {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -211,7 +202,7 @@ aside .zen-submit {
 }
 
 aside .zen-translations {
-  padding: .85em;
+  padding: .55em;
   margin: 1em 0;
   text-decoration: none;
   list-style-type: none;
@@ -220,7 +211,7 @@ aside .zen-translations {
   border-radius: 7px;
 }
 
-#design-selection {
+aside #design-selection {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 2em 1em -1em;
   padding: 1em;
@@ -228,7 +219,7 @@ aside .zen-translations {
   border-radius: 10px;
 }
 
-#design-archives {
+aside #design-archives {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 2em 1em -1em;
   padding: 1em;
@@ -236,7 +227,7 @@ aside .zen-translations {
   border-radius: 10px;
 }
 
-#zen-resources {
+aside #zen-resources {
   background-color: rgba(254, 250, 224, 0.5);
   margin: 1em 2em 1em -1em;
   padding: 1em;
@@ -282,14 +273,14 @@ footer a {
 
 footer a:hover {
   color: #fefae0;
+  font-weight: 800;
+  background: url(./images/leaf-svgrepo-com.svg) no-repeat center;
+  background-size: 30px;
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
+          filter: opacity(0.5) drop-shadow(0 0 0 white);
 }
 
 footer a:visited {
   color: #f09f2d;
-}
-
-.zen-validate-html {
-  color: white;
-  padding: 0 1em;
 }
 /*# sourceMappingURL=styles.css.map */
