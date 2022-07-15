@@ -50,7 +50,6 @@ body {
     background-size: 200px auto;
 }
 
-
 .intro h2 {
     margin-right: 3.5em;
     text-align: right;
@@ -58,7 +57,7 @@ body {
     font-size: 35px;
 }
 
-div#zen-summary.summary  {
+div#zen-summary.summary {
     line-height: 1em;
     font-size: 18px;
     padding: 0 1em 1em 1em;
@@ -67,13 +66,13 @@ div#zen-summary.summary  {
     margin-top: -10.5em;
     background-color: transparent;
     border: none;
-    
 }
 
 div#zen-summary.summary p {
     padding-bottom: 20px;
     padding-left: 1.5em;
 }
+
 
 /*.summary p {
     margin-left: 5em;
@@ -93,10 +92,8 @@ div#zen-summary.summary p {
     padding: 2.5em 2em 0 2em;
     background: transparent;
     border: none;
-    text-align: center; 
+    text-align: center;
 }
-
-
 
 div[role=article] {
     background-color: rgba(254, 250, 224, 0.5);
@@ -133,8 +130,6 @@ header h1 {
     margin-right: 1.5em;
     padding-top: 50px;
     align-items: center;
-    
-    
 }
 
 header[role=banner] {
@@ -197,7 +192,6 @@ aside {
     margin: 0 2em;
     max-width: 1100px;
 }
-
 
 footer {
     display: flex;
