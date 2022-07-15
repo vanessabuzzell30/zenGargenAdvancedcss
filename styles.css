@@ -378,4 +378,16 @@ aside #zen-resources {
   border: 2px solid #606c38;
   border-radius: 10px;
 }
+
+@media only screen and (min-width: 60em) {
+  #zen-intro header h1 {
+    margin-right: 4em;
+  }
+  #zen-intro header h2 {
+    padding-right: 1em;
+  }
+  div#zen-summary.summary {
+    padding-right: 2em;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
