@@ -44,33 +44,59 @@ body {
 #zen-intro {
     grid-column: 1 / span 2;
     grid-row: 1;
-    padding: 4em;
-    margin-bottom: 20em;
-    background: url(/images/leaves_tran.png)no-repeat top left;
-    background-blend-mode: lighten;
+    margin-bottom: 25em;
+    background: url(/images/imgleaf.png)no-repeat top right;
+    background-size: 200px auto;
 }
 
-#zen-summary {
+header h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.intro h2 {
+    font-weight: 550;
+    font-size: 30px;
+}
+
+div#zen-summary.summary  {
+    grid-column: 1 / span 2;
+    grid-row: 1;
     background-color: transparent;
     border: none;
-    background: url(/images/imgleaf.png)no-repeat top right;
-    background-size: 125px auto;
+    margin-left: 59%;
+    margin-right: 3em;
     margin-top: -9em;
+    z-index: 6;
 }
 
-.summary p {
-    margin-right: 180px;
+div#zen-summary.summary p {
+    font-family: $heading-Font;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*.summary p {
+    margin-left: 5em;
     width: 25rem;
     font-style: italic;
 }
 
-#zen-preamble {
-    background-image: linear-gradient(to right, $color2, $color5);
-    border: none;
-    color: white;
+
+/* #zen-summary {
     text-align: center;
-    font-size: $sub-heading-font-size;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
+*/
+
+#zen-preamble {
+    background: transparent;
+    border: none;
+    text-align: center; 
+}
+
+
 
 div[role=article] {
     background-color: rgba(254, 250, 224, 0.5);
@@ -104,6 +130,11 @@ header h1 {
     padding-top: 50px;
     align-items: center;
     justify-content: center;
+}
+
+header[role=banner] {
+    background: url(/images/leaves_tran.png)no-repeat top left;
+    background-blend-mode: lighten;
 }
 
 aside {
@@ -162,11 +193,6 @@ aside {
     max-width: 1100px;
 }
 
-.intro h2 {
-    font-size: 20px;
-    font-weight: lighter;
-    padding-bottom: 15px;
-}
 
 footer {
     display: flex;
