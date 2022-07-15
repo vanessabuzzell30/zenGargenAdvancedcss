@@ -7,11 +7,11 @@ div[role=article] {
     a {
         color: $color7;
         text-decoration: none;
-    }
-    a:hover {
-        color: $color3;
-    }
-    a:visited {
-        color: $color2;
+         :hover {
+            color: $color3;
+        }
+         :visited {
+            color: $color2;
+        }
     }
 }

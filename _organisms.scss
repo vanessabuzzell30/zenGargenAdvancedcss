@@ -70,6 +70,9 @@
             color: $color2;
             padding: 0 3em;
             text-decoration: none;
+             :visited {
+                color: $color2;
+            }
         }
         a:hover {
             color: $color3;
@@ -77,9 +80,28 @@
             background: url(./images/leaf-svgrepo-com.svg) no-repeat center;
             background-size: 30px;
             filter: opacity(0.5) drop-shadow(0 0 0 $color6);
-        }
-        a:visited {
-            color: $color2;
+            animation: bouncy 5s infinite linear;
+            position: relative;
+            @keyframes bouncy {
+                0% {
+                    bottom: 0em
+                }
+                43% {
+                    bottom: -0.9em
+                }
+                46% {
+                    bottom: 0em
+                }
+                48% {
+                    bottom: -0.4em
+                }
+                50% {
+                    bottom: 0em
+                }
+                100% {
+                    bottom: 0em;
+                }
+            }
         }
     }
 }
@@ -94,12 +116,12 @@ aside {
         color: white;
         text-decoration: none;
         list-style-type: none;
-    }
-    a:hover {
-        color: $color3;
-    }
-    a:visited {
-        color: $color2;
+         :hover {
+            color: $color3;
+        }
+         :visited {
+            color: $color2;
+        }
     }
     nav[role=navigation] {
         li {
@@ -108,22 +130,48 @@ aside {
         li:hover {
             background-color: $color5;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all 0.2s;
         }
     }
     .view-css {
         @include side-btn();
     }
+    .view-css:hover {
+        background-color: $color5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.2s;
+    }
     .css-resources {
         @include side-btn();
+    }
+    .css-resources:hover {
+        background-color: $color5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.2s;
     }
     .zen-faq {
         @include side-btn();
     }
+    .zen-faq:hover {
+        background-color: $color5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.2s;
+    }
     .zen-submit {
         @include side-btn();
     }
+    .zen-submit:hover {
+        background-color: $color5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.2s;
+    }
     .zen-translations {
         @include side-btn();
+    }
+    .zen-translations:hover {
+        background-color: $color5;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.2s;
     }
     #design-selection {
         @include side-section();

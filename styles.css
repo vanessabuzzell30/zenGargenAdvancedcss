@@ -55,11 +55,11 @@ div[role=article] a {
   text-decoration: none;
 }
 
-div[role=article] a:hover {
+div[role=article] a :hover {
   color: #fefae0;
 }
 
-div[role=article] a:visited {
+div[role=article] a :visited {
   color: #f09f2d;
 }
 
@@ -164,6 +164,10 @@ div[role=article] a:visited {
   text-decoration: none;
 }
 
+.main footer a :visited {
+  color: #f09f2d;
+}
+
 .main footer a:hover {
   color: #fefae0;
   font-weight: 800;
@@ -171,10 +175,51 @@ div[role=article] a:visited {
   background-size: 30px;
   -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
           filter: opacity(0.5) drop-shadow(0 0 0 white);
+  -webkit-animation: bouncy 5s infinite linear;
+          animation: bouncy 5s infinite linear;
+  position: relative;
 }
 
-.main footer a:visited {
-  color: #f09f2d;
+@-webkit-keyframes bouncy {
+  0% {
+    bottom: 0em;
+  }
+  43% {
+    bottom: -0.9em;
+  }
+  46% {
+    bottom: 0em;
+  }
+  48% {
+    bottom: -0.4em;
+  }
+  50% {
+    bottom: 0em;
+  }
+  100% {
+    bottom: 0em;
+  }
+}
+
+@keyframes bouncy {
+  0% {
+    bottom: 0em;
+  }
+  43% {
+    bottom: -0.9em;
+  }
+  46% {
+    bottom: 0em;
+  }
+  48% {
+    bottom: -0.4em;
+  }
+  50% {
+    bottom: 0em;
+  }
+  100% {
+    bottom: 0em;
+  }
 }
 
 aside {
@@ -194,11 +239,11 @@ aside a {
   list-style-type: none;
 }
 
-aside a:hover {
+aside a :hover {
   color: #fefae0;
 }
 
-aside a:visited {
+aside a :visited {
   color: #f09f2d;
 }
 
@@ -216,6 +261,8 @@ aside nav[role=navigation] li:hover {
   background-color: #606c38;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 aside .view-css {
@@ -228,6 +275,14 @@ aside .view-css {
   border-radius: 7px;
 }
 
+aside .view-css:hover {
+  background-color: #606c38;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 aside .css-resources {
   padding: .55em;
   margin: 1em 0;
@@ -236,6 +291,14 @@ aside .css-resources {
   background-color: #283618;
   color: white;
   border-radius: 7px;
+}
+
+aside .css-resources:hover {
+  background-color: #606c38;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 aside .zen-faq {
@@ -248,6 +311,14 @@ aside .zen-faq {
   border-radius: 7px;
 }
 
+aside .zen-faq:hover {
+  background-color: #606c38;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 aside .zen-submit {
   padding: .55em;
   margin: 1em 0;
@@ -258,6 +329,14 @@ aside .zen-submit {
   border-radius: 7px;
 }
 
+aside .zen-submit:hover {
+  background-color: #606c38;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 aside .zen-translations {
   padding: .55em;
   margin: 1em 0;
@@ -266,6 +345,14 @@ aside .zen-translations {
   background-color: #283618;
   color: white;
   border-radius: 7px;
+}
+
+aside .zen-translations:hover {
+  background-color: #606c38;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 aside #design-selection {
