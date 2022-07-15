@@ -1,1 +1,17 @@
-@import 'variables';
+div[role=article] {
+    background-color: rgba(254, 250, 224, 0.5);
+    margin: 1em 0;
+    padding: 1em;
+    border: 2px solid $color5;
+    border-radius: 10px;
+    a {
+        color: $color7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color3;
+    }
+    a:visited {
+        color: $color2;
+    }
+}

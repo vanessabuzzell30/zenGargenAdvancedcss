@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antic&family=Fredericka+the+Great&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,10 +27,6 @@ p {
   padding-bottom: 10px;
 }
 
-nav {
-  font-family: "Antic", sans-serif;
-}
-
 body {
   margin: 0;
   background: url("https://images.unsplash.com/photo-1444858345149-8ff40887589b?crop=entropy&fit=crop&fm=jpg&h=1325&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1700") center center/cover no-repeat;
@@ -47,60 +40,6 @@ body {
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
-}
-
-#zen-intro {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / span 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  margin-bottom: 25em;
-  background: url(/images/imgleaf.png) no-repeat top right;
-  background-size: 200px auto;
-}
-
-.intro h2 {
-  margin-right: 3.5em;
-  text-align: right;
-  text-shadow: 3px 3px 5px beige;
-  font-size: 35px;
-}
-
-div#zen-summary.summary {
-  line-height: 1em;
-  font-size: 18px;
-  padding: 0 1em 1em 1em;
-  margin-left: 60%;
-  margin-right: 3em;
-  margin-top: -10.5em;
-  background-color: transparent;
-  border: none;
-}
-
-div#zen-summary.summary p {
-  padding-bottom: 20px;
-  padding-left: 1.5em;
-}
-
-/*.summary p {
-    margin-left: 5em;
-    width: 25rem;
-    font-style: italic;
-}
-
-
-/* #zen-summary {
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-*/
-#zen-preamble {
-  padding: 2.5em 2em 0 2em;
-  background: transparent;
-  border: none;
-  text-align: center;
 }
 
 div[role=article] {
@@ -124,7 +63,41 @@ div[role=article] a:visited {
   color: #f09f2d;
 }
 
-header {
+#zen-intro {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-bottom: 25em;
+  background: url(/images/imgleaf.png) no-repeat top right;
+  background-size: 200px auto;
+}
+
+#zen-intro .summary {
+  line-height: 1em;
+  font-size: 18px;
+  padding: 0 1em 1em 1em;
+  margin-left: 60%;
+  margin-right: 3em;
+  margin-top: -10.5em;
+  background-color: transparent;
+  border: none;
+}
+
+#zen-intro .summary p {
+  padding-bottom: 20px;
+  padding-left: 1.5em;
+}
+
+#zen-intro #zen-preamble {
+  padding: 2.5em 2em 0 2em;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+#zen-intro header {
   text-align: center;
   color: black;
   width: 100%;
@@ -134,7 +107,7 @@ header {
   padding-bottom: 80px;
 }
 
-header h1 {
+#zen-intro header h1 {
   font-size: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,9 +122,59 @@ header h1 {
           align-items: center;
 }
 
-header[role=banner] {
+#zen-intro header h2 {
+  margin-right: 3.5em;
+  text-align: right;
+  text-shadow: 3px 3px 5px beige;
+  font-size: 35px;
+}
+
+#zen-intro header[role=banner] {
   background: url(/images/leaves_tran.png) no-repeat top left;
   background-blend-mode: lighten;
+}
+
+.main {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 0 2em;
+  max-width: 1100px;
+}
+
+.main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  background-color: #283618;
+  padding: 2.5em 0;
+  opacity: 0.8;
+}
+
+.main footer a {
+  color: #f09f2d;
+  padding: 0 3em;
+  text-decoration: none;
+}
+
+.main footer a:hover {
+  color: #fefae0;
+  font-weight: 800;
+  background: url(./images/leaf-svgrepo-com.svg) no-repeat center;
+  background-size: 30px;
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
+          filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.main footer a:visited {
+  color: #f09f2d;
 }
 
 aside {
@@ -159,6 +182,10 @@ aside {
   grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
+}
+
+aside nav {
+  font-family: "Antic", sans-serif;
 }
 
 aside a {
@@ -263,48 +290,5 @@ aside #zen-resources {
   padding: 1em;
   border: 2px solid #606c38;
   border-radius: 10px;
-}
-
-.main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / span 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  margin: 0 2em;
-  max-width: 1100px;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100px;
-  background-color: #283618;
-  padding: 2.5em 0;
-  opacity: 0.8;
-}
-
-footer a {
-  color: #f09f2d;
-  padding: 0 3em;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #fefae0;
-  font-weight: 800;
-  background: url(./images/leaf-svgrepo-com.svg) no-repeat center;
-  background-size: 30px;
-  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 white);
-          filter: opacity(0.5) drop-shadow(0 0 0 white);
-}
-
-footer a:visited {
-  color: #f09f2d;
 }
 /*# sourceMappingURL=styles.css.map */
