@@ -2,7 +2,7 @@
     grid-column: 1 / span 2;
     grid-row: 1;
     margin-bottom: 25em;
-    background: url(/images/imgleaf.png)no-repeat top right;
+    background: url(./images/imgleaf.png)no-repeat top right;
     background-size: 200px auto;
     .summary {
         line-height: 1em;
@@ -48,7 +48,7 @@
         }
     }
     header[role=banner] {
-        background: url(/images/leaves_tran.png)no-repeat top left;
+        background: url(./images/leaves_tran.png)no-repeat top left;
         background-blend-mode: lighten;
     }
 }
